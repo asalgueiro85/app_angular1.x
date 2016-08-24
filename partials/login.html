@@ -1,0 +1,51 @@
+<div ng-controller="generalCtrl">
+	<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 mb-20 bg-fff br-7 bsh-7 mt-40 pb-15 pl-1 pr-1">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center">
+			<a href="#/resend-code" class="pull-right pt-5 c-808080">X</a>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center pos-abs top-10">
+				<span class="fs-18 c-000">Get connected</span>
+			</div>
+		</div>
+	
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center mt-40">
+			<span class="fs-14 c-808080">Or use a social network</span></br>
+			<button class="mt-10 br-10 pt-10 pb-10 wlg-60 wxs-80 bg-335388 border0">
+				<span class="pl-3 pull-left icon1-fb c-fff fs-24"></span> 
+				<span class="fs-18 c-fff titilliumwebBold">Facebook</span>
+			</button></br>
+			<button class="mt-10 br-10 pt-10 pb-10 wlg-60 wxs-80 bg-e43838 border0">
+				<span class="pl-3 pull-left icon1-plus c-fff fs-24"></span> 
+				<span class="fs-18 c-fff titilliumwebBold">Google+</span>
+			</button>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center mt-40">
+			<span class="fs-14 c-808080">Use your account data</span></br>
+			<span class="fs-10 c-d33a3a titilliumwebRegular">{[{login.error}]}</br></span>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+				<form class="form-inline wlg-60 wxs-80 center-all" role="form" novalidate name="loginForm" method="POST" enctype="multipart/form-data">
+					<div class="form-group has-feedback center-all w100">
+						<input type="email" ng-model="login.email" placeholder="E-mail" class="form-control placeholder placeholder-808080 h-30 fs-12" name="email">
+						<span class="icon icon1-mail1 form-control-feedback c-808080 fs-12 pos-abs top-8"></span>
+					</div>
+					<div class="form-group has-feedback center-all w100 pb-0">
+						<input type="password" ng-model="login.password" placeholder="Password" class="form-control placeholder placeholder-808080 h-30 mb-0 fs-12" name="password">
+						<span class="icon icon1-pass form-control-feedback c-808080 fs-12 pos-abs top-8"></span>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-left">
+						<span class="fs-10 c-bfbfbf titilliumwebLightItalic">Have you forgotten your password?</span>
+					</div>
+
+					<button ng-click="test()" type="submit" class="bg-eca142 border0 br-10 w-60 pt-10 pb-10 mt-10"><span class="titilliumwebBold c-000 fs-18">Login</span></button>
+				</form>
+
+			</div>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center mt-40">
+			<span class="fs-18 c-808080">New in</span> <span class="fs-18 c-5a98ba">AktionMed?</span></br>
+			<a href="#/register" class="fs-14 c-000 ownhover">Register here</a>
+		</div>
+	</div>
+</div>

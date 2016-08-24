@@ -1,0 +1,216 @@
+<div ng-controller="generalCtrl">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 mb-30">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 border-fff brlr-7">
+			<div class="w-60 wsmall-100 center-all">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-30 text-center pt-10 pb-20 progress-access">
+					<span class="titilliumwebRegular c-000 fs-14">Access</span></br>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 pt-10">
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-44 h-4 progress-left"></div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-12 progress-icon">
+							<i class="material-icons c-62a7d4 fs-20">radio_button_checked</i>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-44 borderb-62a7d4 pt-10 progress-right"></div>
+
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-40 text-center pb-20 progress-check">
+					<span class="titilliumwebBold fs-24 c-5a98ba">Checkout</span></br>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 pt-6">
+						
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-44 borderb-62a7d4 pt-10 progress-left"></div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-12 progress-icon">
+							<i class="material-icons c-62a7d4 fs-16">lens</i>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-44 borderb-bebebe pt-10 progress-right"></div>
+
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-30 text-center pt-10 pb-20 progress-confirm">
+					<span class="titilliumwebRegular fs-14 c-bfbfbf">Confirmation</span></br>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 pt-10">
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-44 borderb-bebebe pt-10 progress-left"></div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-12 progress-icon">
+							<i class="material-icons c-bebebe fs-16">radio_button_unchecked</i>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 w-44 h-4 progress-right"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 bsh-2-05-center br-7 mt--5 bg-163e54 mh-lg-180">
+			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 bg-fff brld-7 brltsmall-7 mh-lg-180 pt-30 pb-15 pr-7">
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pl-0 pr-5">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 br-7 border-a0bed2">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pad0">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 text-center pb-3">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 h-25">
+									<div>
+										<input type="checkbox" class="filled-in pos-rel top-3" id="doctor-selected" checked="" ng-click="unselectProfessor()"/>
+								      	<label for="doctor-selected" class="fs-12 c-163e54 titilliumwebBold">Edit Selection</label>
+								    </div>
+								</div>	
+
+								<img class="img-responsive img-rounded center-all" src="img/{[{fullProfile.profimg}]}">
+								<h4 class="mt-5 mb-0 fs-16 titilliumwebBold">{[{fullProfile.profname}]}</h4>
+								<h6 class="mar0">{[{fullProfile.speciality}]}</h6>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 pt-5">
+									<span class="icon-localizacion c-d8bc79 fs-14 fw-bold"></span>
+									<font class="fs-14 c-000 pl-5 fw-bold">Location</font>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 pt-5 pt-small-5">
+									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pad0 padr-md-0 pl-md-5 text-left text-center-small">
+										<span class="icon-verificado c-d8bc79 fs-14 fw-bold"></span>
+										<font class="fs-14 c-000 pl-5 titilliumwebBold">8</font><font class="fs-14 c-000">/10</font>
+									</div>
+
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pl-5 pt-small-5 pl-small-10 pr-0">
+										<span class="icon-capacidades c-d8bc79 fs-14 fw-bold"></span>
+										<font class="fs-14 c-000 pl-5 titilliumwebBold">10</font>
+									</div>
+
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pl-5 pr-0 pt-small-5 pr-10-px text-right text-center-small padl-md-0 pr-md-5">
+										<span class="icon-rechazados c-d8bc79 fs-14 fw-bold"></span>
+										<font class="fs-14 c-000 pl-5 titilliumwebBold">8</font>
+									</div>
+								</div>						
+							</div>
+						</div>
+
+
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 pr-0 pt-25">
+							<p class="fs-14 c-808080">
+								{[{fullProfile.biography}]}
+							</p>
+						</div>						
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pad0">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 br-7 border-a0bed2 pb-18">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0">
+							<h6 class="c-808080 text-center">Appointment’s days</h6>
+						</div>
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center pt-25 pb-25">
+							<i class="material-icons md-24 c-000">date_range</i>
+							<h3 class="titilliumwebRegular c-163e54 text-center mt--5">February</h3>
+						</div>
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+							<div class="center-all w-80 cursor-pointer border-163e54 br-7 titilliumwebRegular fs-14 c-163e54 pt-5 pb-5 pl-10-px pr-10-px">
+								<span>Select</span>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 prl-0 brrd-7 mvertical">
+				<div class="col-lg-12 col-md-12 col-sm-4 col-xs-6 padt-small-10 text-center pull-small-right text-right-small mb-10">
+					<h6 class="titilliumwebRegular fs-14 c-eca142 mb-0">Discount</h6>
+					<div class="icon padb-small-10">
+						<font class="fs-28 c-fff ">-€30</font>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-12 col-xs-12 prl-0 text-center check-price">
+				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-l2 bg-163e54 img-rounded pb-5 border-fff-1">
+					<div class="lh-20 mb-5 mt-10">
+						<font class="c-fff fs-14 titilliumwebRegular">Original Price</font></br>
+						<font class="c-eca142 fs-28 titilliumwebBold">€500</font>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 mb-30">
+
+		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 prl-0 brld-7 borderltb-dddfe0 act-disc border-small-dddfe0 brltsmall-7 padb-small-10">
+			<h4 class="c-4c4c4c titilliumwebRegular mb-0 pl-15">Activate your discount</h4>
+			
+			<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 mt-15 pl-md-35">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 bg-CFD4D6 h-162 h-md-160 br-2 bsh-2-05">
+					<div id="bottom-active" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 vertical-center z5">
+						<span class="cursor-pointer pt-6 pb-6 pl-10-px pr-10-px border-fff-1 bsh-2-05 br-20 bg-62a7d4 fs-12 c-fff">Click to activate discount</span>
+						<div class="cursor-pointer pt-6 pb-6 pl-10-px pr-10-px br-20 fs-12 c-fff mask-opacity pos-abs top--8 h-33 w-145" ng-click="hideElement('#discount-mask'); hideElement('#bottom-active')"></div>
+					</div>
+
+					<div class="img-circle text-center bg-d8bc79 pt-13 h-45 w-45 pos-abs top--10 right--10">
+						<font class="fs-14 c-fff">€15</font>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-5 col-xs-5 mt-15 pr-md-35">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 bg-CFD4D6 h-162 h-md-80 br-2 h-small-80">
+					<div class="img-circle text-center bg-bebebe pt-13 h-45 w-45 pos-abs top--10 right--10 top-md-0
+	right-md--15">
+						<font class="fs-14 c-fff">€10</font>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-7 col-xs-7 mt-15 mt-md-6 pr-md-35">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 bg-CFD4D6 h-162 h-md-80 br-2 h-small-80">
+					<div class="img-circle text-center bg-bebebe pt-13 h-45 w-45 pos-abs top--10 right--10 top-md-0
+	right-md--15">
+						<font class="fs-14 c-fff">€8</font>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 prl-0 bg-163e54 text-center brsmall-0 act-disc brrd-7">
+			<div class="col-lg-12 col-md-12 col-sm-4 col-xs-6 padt-small-10 text-right-small padt-lg-85 mb-10">
+				<h6 class="titilliumwebRegular fs-14 c-eca142 mb-0">Discount</h6>
+				<div class="icon padb-small-10">
+					<font class="fs-28 c-fff ">-€</font>
+				</div>
+			</div>
+		</div>
+
+		<div id="discount-mask" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 img-rounded brltsmall-7 border-small-dddfe0 act-disc act-sm-disc pos-abs mask-opacity"></div>
+	</div>
+
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 mb-100">		
+		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 prl-0 brld-7 borderltb-dddfe0 img-property border-small-dddfe0 brltsmall-7 padb-small-10">
+			<h4 class="c-4c4c4c titilliumwebRegular mb-20 pl-15">Enter your Voucher code</h4>
+			<h6 class="c-4c4c4c text-center">Voucher code</h6>
+		</div>
+
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 prl-0 bg-163e54 text-center brsmall-0 img-property brrd-7">
+			<div class="col-lg-12 col-md-12 col-sm-8 col-xs-6 text-left-small padt-small-10 hidden-lg hidden-md">
+				<h4 class="c-fff titilliumwebBold">Price</h4>
+			</div>		
+
+			<div class="col-lg-12 col-md-12 col-sm-4 col-xs-6 padt-small-10 text-right-small padt-lg-45 mb-10">
+				<h6 class="titilliumwebRegular fs-14 c-eca142 mb-0">Discount</h6>
+				<div class="icon padb-small-10">
+					<font class="fs-28 c-fff ">-€30</font>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-12 col-xs-12 prl-0 borderrl-fff text-center z10">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-l2 bg-FF9D00 img-rounded pb-10 pt-10 our-price bottom-lg--70 bsh-2">
+				<div class="lh-20 mb-5">
+					<font class="c-fff fs-18 titilliumwebBold">Our Price</font></br>
+					<font class="c-fff fs-36 titilliumwebBold">€850</font>
+				</div>
+				
+				<font class="c-000 fs-14 titilliumwebBold">GET APPOINTMENT</font>
+
+				<div class="col-lg-12 col-md-12 hidden-sm hidden-xs prl-0 img-rounded our-price pos-abs mask-opacity mask-get-app"></div>
+			</div>
+		</div>
+		
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prl-0 br-7 brltsmall-7 border-small-dddfe0 img-property img-sm-property pos-abs mask-opacity"></div>
+	</div>
+</div>

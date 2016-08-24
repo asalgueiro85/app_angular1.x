@@ -1,0 +1,37 @@
+<div ng-controller="generalCtrl">
+	<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 mb-20 bg-fff br-7 bsh-7 mt-40 pb-15 pl-1 pr-1 border-000">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center mt-15">
+				<span class="fs-18 c-000">Request Code</span>
+			</div>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 text-center mt-40">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-40">
+				<form class="form-inline wlg-60 wxs-80 center-all" role="form" novalidate name="waitingForm" method="POST" enctype="multipart/form-data">
+					<div class="form-group has-feedback center-all w100 emailcode">
+						<input type="email" ng-model="request.email" required placeholder="mail@gmail.com" class="form-control placeholder placeholder-c5af8d h-30 fs-12" name="emailrequest">
+						<span class="icon icon1-mail1 form-control-feedback c-c5af8d fs-12 pos-abs top-8"></span>
+					</div>
+					<div class="form-group has-feedback center-all w100">
+						<input type="text" ng-model="request.number" required placeholder="" class="form-control placeholder h-30 fs-12" name="code">
+						<span class="icon icon1-code form-control-feedback c-808080 fs-12 pos-abs top-8"></span>
+					</div>
+					<div ng-show="!waitingForm.$valid" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad0 lh-12">
+						<span class="fs-10 c-bfbfbf">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmod tempor sed do eiusmod tempor sed do eiusmod 
+						</span>
+					</div>	
+
+					<button ng-show="waitingForm.$valid" type="submit" class="bg-eca142 border0 br-10 w-45p pt-10 pb-10 mt-10"><span class="titilliumwebBold c-000 fs-18">Confirm</span></button>				
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 pl-1 pr-1 text-center mb-40">
+		<div class="wlg-60 wxs-80 center-all">
+			<a href="#/register" class="bg-eca142 border0 br-10 pl-10 pr-10 pt-10 pb-10 mt-10"><span class="titilliumwebBold c-000 fs-18">Register</span></a>
+		</div>
+	</div>
+</div>
